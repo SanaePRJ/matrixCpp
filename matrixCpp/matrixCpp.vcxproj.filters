@@ -19,4 +19,27 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="matrix">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+    <None Include=".editorConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="matri.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="matrixCalc.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="matrixOp.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="matrixDec.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="matrixUtils.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
