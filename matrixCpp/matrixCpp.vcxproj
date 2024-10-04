@@ -130,14 +130,16 @@
     <ClCompile Include="matrixCpp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md" />
     <None Include=".editorConfig" />
     <None Include="matrix" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="matri.h" />
     <ClInclude Include="matrixCalc.hpp" />
+    <ClInclude Include="matrixCtor.hpp" />
     <ClInclude Include="matrixDec.hpp" />
-    <ClInclude Include="matrixOp.hpp" />
+    <ClInclude Include="matrixOps.hpp" />
     <ClInclude Include="matrixUtils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
