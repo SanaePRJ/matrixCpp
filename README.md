@@ -76,6 +76,8 @@ Matrix<double> mdouble;
 	matrix.h matrixCalc.hppなどすべてのファイルをインクルードします。
  - matrix.h
 	matrixクラスの定義,メンバ関数のプロトタイプ宣言などメンバの定義を行います。
+ - matrixCtor.hpp
+	コンストラクタを定義します。
  - matrixCalc.hpp
 	加算,減算,アダマール積など計算を行います。
  - matrixOp.hpp
@@ -87,6 +89,7 @@ Matrix<double> mdouble;
 
 ```
 matrix ---- matrix.h
+        |-- matrixCtor.hpp
         |-- matrixCalc.hpp
         |-- matrixOp.hpp
         |-- matrixDec.hpp
@@ -144,7 +147,7 @@ Type Matrix<Type>::testFuncPublic(const Matrix& a,const Matrix& b){
 ## 機能一覧
 |操作          |演算子 |関数          |引数                  |返り値型                                          |特殊化|
 |----          |----   |----          |----                  |----                                              |----  |
-|代入          |=,<<   |None          |`MatrixInitType<Type>`  |`Matrix<Type>&`                                   |No    |
+|代入          |=,<<   |None          |`MatrixInitType<Type>`|`Matrix<Type>&`                                   |No    |
 |コピー        |=,<<   |None          |`const Matrix<Type>&` |`Matrix<Type>&`                                   |No    |
 |ムーブ代入    |=      |None          |`Matrix<Type>&&`      |`Matrix<Type>&`                                   |No    |
 |行参照        |[]     |rowRef        |`size_t`              |`std::vector<Type>`/`std::reference_wrapper<Type>`|No    |

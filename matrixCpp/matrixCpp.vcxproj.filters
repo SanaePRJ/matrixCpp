@@ -24,6 +24,7 @@
       <Filter>ヘッダー ファイル</Filter>
     </None>
     <None Include=".editorConfig" />
+    <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="matri.h">
@@ -32,13 +33,16 @@
     <ClInclude Include="matrixCalc.hpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="matrixOp.hpp">
+    <ClInclude Include="matrixOps.hpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="matrixDec.hpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="matrixUtils.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="matrixCtor.hpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

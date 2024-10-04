@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\matrixCpp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\matrixCpp\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixOp.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:matrixCpp\\matrixOp.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixDec.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:matrixCpp\\matrixDec.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixUtils.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:matrixCpp\\matrixUtils.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\.editorConfig||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:matrixCpp\\.editorConfig||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matri.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -29,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:matrixCpp\\matrixCpp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCalc.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:matrixCpp\\matrixCalc.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,61 +21,41 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 306,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 420,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": ".editorConfig",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\.editorConfig",
-              "RelativeDocumentMoniker": "matrixCpp\\.editorConfig",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\.editorConfig",
-              "RelativeToolTip": "matrixCpp\\.editorConfig",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-04T02:46:08.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "matrixUtils.hpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixUtils.hpp",
-              "RelativeDocumentMoniker": "matrixCpp\\matrixUtils.hpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixUtils.hpp",
-              "RelativeToolTip": "matrixCpp\\matrixUtils.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T01:33:36.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "matrixDec.hpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixDec.hpp",
-              "RelativeDocumentMoniker": "matrixCpp\\matrixDec.hpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixDec.hpp",
-              "RelativeToolTip": "matrixCpp\\matrixDec.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T01:32:03.432Z",
+              "Title": "matrixCpp.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp",
+              "RelativeDocumentMoniker": "matrixCpp\\matrixCpp.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp",
+              "RelativeToolTip": "matrixCpp\\matrixCpp.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-04T03:37:39.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "matrixOp.hpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixOp.hpp",
-              "RelativeDocumentMoniker": "matrixCpp\\matrixOp.hpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixOp.hpp",
-              "RelativeToolTip": "matrixCpp\\matrixOp.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAARAAAA",
+              "Title": "matri.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matri.h",
+              "RelativeDocumentMoniker": "matrixCpp\\matri.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matri.h",
+              "RelativeToolTip": "matrixCpp\\matri.h",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAFkAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T01:31:34.215Z",
+              "WhenOpened": "2024-10-04T03:02:45.793Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 420,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -104,48 +64,9 @@
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGYAAAAAAAAA",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAAKAAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-10-02T08:09:49.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "matrixCalc.hpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCalc.hpp",
-              "RelativeDocumentMoniker": "matrixCpp\\matrixCalc.hpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCalc.hpp",
-              "RelativeToolTip": "matrixCpp\\matrixCalc.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T01:31:17.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "matri.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matri.h",
-              "RelativeDocumentMoniker": "matrixCpp\\matri.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matri.h",
-              "RelativeToolTip": "matrixCpp\\matri.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T01:30:48.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "matrixCpp.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp",
-              "RelativeDocumentMoniker": "matrixCpp\\matrixCpp.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp",
-              "RelativeToolTip": "matrixCpp\\matrixCpp.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-02T08:09:15.69Z",
+              "WhenOpened": "2024-10-04T03:25:17.572Z",
               "EditorCaption": ""
             }
           ]
