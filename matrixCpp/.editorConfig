@@ -1,0 +1,15 @@
+# 最上位のEditorConfigファイル
+root = true
+
+# すべてのファイルに適用される設定
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# C++ファイルに特化した設定
+[*.{cpp,h,hpp}]
+indent_style = space
+indent_size = 4
+max_line_length = 120

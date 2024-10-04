@@ -129,6 +129,17 @@
   <ItemGroup>
     <ClCompile Include="matrixCpp.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorConfig" />
+    <None Include="matrix" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="matri.h" />
+    <ClInclude Include="matrixCalc.hpp" />
+    <ClInclude Include="matrixDec.hpp" />
+    <ClInclude Include="matrixOp.hpp" />
+    <ClInclude Include="matrixUtils.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
