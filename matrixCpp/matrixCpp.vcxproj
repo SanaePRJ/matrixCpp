@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,15 +134,15 @@
   <ItemGroup>
     <None Include="..\README.md" />
     <None Include=".editorConfig" />
-    <None Include="matrix" />
+    <None Include="matrixLib\matrix" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="matri.h" />
-    <ClInclude Include="matrixCalc.hpp" />
-    <ClInclude Include="matrixCtor.hpp" />
-    <ClInclude Include="matrixDec.hpp" />
-    <ClInclude Include="matrixOps.hpp" />
-    <ClInclude Include="matrixUtils.hpp" />
+    <ClInclude Include="matrixLib\matrix.h" />
+    <ClInclude Include="matrixLib\matrixCalc.hpp" />
+    <ClInclude Include="matrixLib\matrixCtor.hpp" />
+    <ClInclude Include="matrixLib\matrixDec.hpp" />
+    <ClInclude Include="matrixLib\matrixOps.hpp" />
+    <ClInclude Include="matrixLib\matrixUtils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

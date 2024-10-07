@@ -1,20 +1,48 @@
-// matrixCpp.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
-//
-
 #include <iostream>
+#include "matrixLib/matrix"
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // matrixCtor.hpp - demoCode
+    {
+        using Type = int;
+
+        Matrix<Type> ctor1; // 指定なし
+
+        Matrix<Type> ctor2 =
+        {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        }; // 値指定
+
+        Matrix<Type> ctor3 = Matrix<Type>::Size{3,3}; // サイズ指定
+
+        Matrix<Type> ctor4 = ctor2;            // コピー
+        Matrix<Type> ctor5 = std::move(ctor2); // move
+    }
+
+    // matrixOps.hpp - demoCode
+    {
+        using Type = int;
+
+        Matrix<Type> ops1;
+        ops1 = { {1,2,3} };
+
+        Matrix<Type> ops2;
+        ops2 = ops1;
+
+        Matrix<Type> ops3;
+        ops3 << Matrix<Type>::MatrixInitType<Type>{{1,2,3}};
+
+        Matrix<Type> ops4;
+        ops4 << ops3;
+
+        Matrix<Type> ops5;
+        ops5 << std::move(ops4);
+
+        for (auto& row_ : ops5[0])
+            std::cout << row_;
+    }
 }
-
-// プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
-// プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
-
-// 作業を開始するためのヒント: 
-//    1. ソリューション エクスプローラー ウィンドウを使用してファイルを追加/管理します 
-//   2. チーム エクスプローラー ウィンドウを使用してソース管理に接続します
-//   3. 出力ウィンドウを使用して、ビルド出力とその他のメッセージを表示します
-//   4. エラー一覧ウィンドウを使用してエラーを表示します
-//   5. [プロジェクト] > [新しい項目の追加] と移動して新しいコード ファイルを作成するか、[プロジェクト] > [既存の項目の追加] と移動して既存のコード ファイルをプロジェクトに追加します
-//   6. 後ほどこのプロジェクトを再び開く場合、[ファイル] > [開く] > [プロジェクト] と移動して .sln ファイルを選択します

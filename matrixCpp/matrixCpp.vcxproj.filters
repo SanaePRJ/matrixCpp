@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ヘッダー ファイル\matrixLib">
+      <UniqueIdentifier>{4a9c6f13-401a-40e9-9d85-2dab78e292f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="matrixCpp.cpp">
@@ -20,30 +23,30 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="matrix">
-      <Filter>ヘッダー ファイル</Filter>
-    </None>
     <None Include=".editorConfig" />
     <None Include="..\README.md" />
+    <None Include="matrixLib\matrix">
+      <Filter>ヘッダー ファイル\matrixLib</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="matri.h">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="matrixLib\matrixCtor.hpp">
+      <Filter>ヘッダー ファイル\matrixLib</Filter>
     </ClInclude>
-    <ClInclude Include="matrixCalc.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="matrixLib\matrixDec.hpp">
+      <Filter>ヘッダー ファイル\matrixLib</Filter>
     </ClInclude>
-    <ClInclude Include="matrixOps.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="matrixLib\matrixOps.hpp">
+      <Filter>ヘッダー ファイル\matrixLib</Filter>
     </ClInclude>
-    <ClInclude Include="matrixDec.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="matrixLib\matrixUtils.hpp">
+      <Filter>ヘッダー ファイル\matrixLib</Filter>
     </ClInclude>
-    <ClInclude Include="matrixUtils.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="matrixLib\matrix.h">
+      <Filter>ヘッダー ファイル\matrixLib</Filter>
     </ClInclude>
-    <ClInclude Include="matrixCtor.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="matrixLib\matrixCalc.hpp">
+      <Filter>ヘッダー ファイル\matrixLib</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\matrixCpp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matri.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:matrixCpp\\matri.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{092B4D84-1D74-4CF8-B5D1-5332989B4851}|matrixCpp\\matrixCpp.vcxproj|solutionrelative:matrixCpp\\matrixCpp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -22,51 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 420,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "matrixCpp.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp",
-              "RelativeDocumentMoniker": "matrixCpp\\matrixCpp.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp",
-              "RelativeToolTip": "matrixCpp\\matrixCpp.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-04T03:37:39.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "matri.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matri.h",
-              "RelativeDocumentMoniker": "matrixCpp\\matri.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matri.h",
-              "RelativeToolTip": "matrixCpp\\matri.h",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAFkAAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T03:02:45.793Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 420,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAAAKAAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-10-04T03:25:17.572Z",
+              "Title": "matrixCpp.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp",
+              "RelativeDocumentMoniker": "matrixCpp\\matrixCpp.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\matrixCpp\\matrixCpp\\matrixCpp.cpp",
+              "RelativeToolTip": "matrixCpp\\matrixCpp.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-04T03:37:39.74Z",
               "EditorCaption": ""
             }
           ]

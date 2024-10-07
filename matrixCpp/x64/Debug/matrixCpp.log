@@ -1,3 +1,12 @@
 ﻿  matrixCpp.cpp
 C:\Users\user\Desktop\matrixCpp\matrixCpp\matrixCpp.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\user\Desktop\matrixCpp\matrixCpp\matrixLib\matrix.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'matrixCpp.cpp' をコンパイルしています)
+  
+C:\Users\user\Desktop\matrixCpp\matrixCpp\matrixLib\matrixOps.hpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'matrixCpp.cpp' をコンパイルしています)
+  
+C:\Users\user\Desktop\matrixCpp\matrixCpp\matrixLib\matrixCtor.hpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'matrixCpp.cpp' をコンパイルしています)
+  
   matrixCpp.vcxproj -> C:\Users\user\Desktop\matrixCpp\x64\Debug\matrixCpp.exe
