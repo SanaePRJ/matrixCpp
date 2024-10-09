@@ -6,6 +6,8 @@
 #include <vector>
 #include <utility>
 #include <functional>
+#include <execution>
+#include <execution>
 #include <type_traits>
 
 
@@ -20,6 +22,8 @@ public:
     template<typename matrixInitType = Type> using MatrixInitType = std::initializer_list<RowInitType<matrixInitType>>; // 行列型(初期化)
 
     using Size = std::pair<size_t,size_t>; // サイズ指定
+
+    using DefPolType               = std::execution::sequenced_policy; // 規定ポリシー型
 
 private:
     // データ格納変数
@@ -52,32 +56,58 @@ public:
     Matrix<Type>& operator *=(const Matrix<Type>&); // 乗算
     Matrix<Type>& operator ^=(const Matrix<Type>&); // アダマール積
     Matrix<Type>& operator /=(const Matrix<Type>&); // アダマール除算
-    Matrix<Type>& operator *=(const Type&); // スカラ倍
+    Matrix<Type>& operator *=(const Type&);         // スカラ倍
 
     // 非破壊的処理
-    Matrix<Type>& operator +(const Matrix<Type>&); // 加算
-    Matrix<Type>& operator -(const Matrix<Type>&); // 減算
-    Matrix<Type>& operator *(const Matrix<Type>&); // 乗算
-    Matrix<Type>& operator ^(const Matrix<Type>&); // アダマール積
-    Matrix<Type>& operator /(const Matrix<Type>&); // アダマール除算
-    Matrix<Type>& operator *(const Type&); // スカラ倍
+    Matrix<Type> operator +(const Matrix<Type>&); // 加算
+    Matrix<Type> operator -(const Matrix<Type>&); // 減算
+    Matrix<Type> operator *(const Matrix<Type>&); // 乗算
+    Matrix<Type> operator ^(const Matrix<Type>&); // アダマール積
+    Matrix<Type> operator /(const Matrix<Type>&); // アダマール除算
+    Matrix<Type> operator *(const Type&);         // スカラ倍
 
 // matrixCalc.hpp
-    Matrix<Type>& add(const Matrix<Type>&); // 加算
-    Matrix<Type>& sub(const Matrix<Type>&); // 減算
-    Matrix<Type>& mul(const Matrix<Type>&); // 乗算
-    Matrix<Type>& scalarMul(const Type&);   // スカラ倍
-    Matrix<Type>& hadamardMul(const Matrix<Type>&); // アダマール積
-    Matrix<Type>& hadamardDiv(const Matrix<Type>&); // アダマール除算
+private:
+    template<typename Type_, typename execPolicy_ = DefPolType> void add_(MatrixType<Type_>&, const MatrixType<Type_>&); // 加算
+    template<typename Type_, typename execPolicy_ = DefPolType> void sub_(MatrixType<Type_>&, const MatrixType<Type_>&); // 減算
+    template<typename Type_, typename execPolicy_ = DefPolType> void mul_(MatrixType<Type_>&, const MatrixType<Type_>&); // 乗算
+    template<typename Type_, typename execPolicy_ = DefPolType> void hadamardMul_(MatrixType<Type_>&, const MatrixType<Type_>&); // アダマール積
+    template<typename Type_, typename execPolicy_ = DefPolType> void hadamardDiv_(MatrixType<Type_>&, const MatrixType<Type_>&); // アダマール除算
+
+    template<typename Type_, typename calcType_,typename execPolicy_ = DefPolType>
+    void calcMatrix_(MatrixType<Type_>&, const MatrixType<Type_>&);
+
+    template<typename Type_, typename calcType_,typename execPolicy_ = DefPolType>
+    void scalarCalc_(MatrixType<Type_>&, const Type_&);
+public:
+
+    template<typename execPolicy = DefPolType> Matrix<Type>& add(const Matrix<Type>&, execPolicy = execPolicy()); // 加算
+    template<typename execPolicy = DefPolType> Matrix<Type>& sub(const Matrix<Type>&, execPolicy = execPolicy()); // 減算
+    template<typename execPolicy = DefPolType> Matrix<Type>& mul(const Matrix<Type>&, execPolicy = execPolicy()); // 乗算
+    template<typename execPolicy = DefPolType> Matrix<Type>& scalarMul  (const Type&, execPolicy = execPolicy()); // スカラ倍
+    template<typename execPolicy = DefPolType> Matrix<Type>& hadamardMul(const Matrix<Type>&, execPolicy = execPolicy()); // アダマール積
+    template<typename execPolicy = DefPolType> Matrix<Type>& hadamardDiv(const Matrix<Type>&, execPolicy = execPolicy()); // アダマール除算
+
+    template<typename calcType, typename execPolicy = DefPolType>
+    Matrix<Type>& scalarCalc(const Matrix<Type>&, execPolicy = execPolicy()); // スカラ計算
 
 // matrixDec.hpp
-    std::vector<Matrix<Type>&> luDec(); // LU分解
-    Matrix<Type> inverse();             // 逆行列
+    std::vector<Matrix<Type>&> luDec();   // LU分解
+    Matrix<Type>               inverse(); // 逆行列
 
 // matrixUtils.hpp
 private:
-    template<typename copyType = Type>
-    void copyMatrix_(MatrixType<copyType>&,const MatrixType<copyType>&); // 各要素をコピー
+    template<typename CopyType_ = Type,typename execPolicy = DefPolType>
+    void copyMatrix_(MatrixType<CopyType_>&,const MatrixType<CopyType_>&); // 各要素をコピー
+
+    template<typename Type_> size_t rows_(const MatrixType<Type_>&) const noexcept;
+    template<typename Type_> size_t cols_(const MatrixType<Type_>&) const noexcept;
+
+    template<typename Type1_,typename Type2_>
+    bool areSameSize_(const MatrixType<Type1_>&, const MatrixType<Type2_>&) const noexcept;
+
+    template<typename Type_>
+    void validateMatrix_(const MatrixType<Type_>&);
 
 public:
     Matrix<Type>  transpose();                            // 転置

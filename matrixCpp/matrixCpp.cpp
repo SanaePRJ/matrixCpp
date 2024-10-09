@@ -1,10 +1,20 @@
 #include <iostream>
 #include "matrixLib/matrix"
+#include <execution>
+
+template<typename policy=std::execution::sequenced_policy>
+void test(std::vector<int>&,policy = policy());
+
+template<typename policy>
+void test(std::vector<int>& a, policy) {
+    std::sort(policy(), a.begin(), a.end());
+}
+
 
 
 int main()
 {
-    // matrixCtor.hpp - demoCode
+    //matrixCtor.hpp - demoCode
     {
         using Type = int;
 
@@ -44,5 +54,15 @@ int main()
 
         for (auto& row_ : ops5[0])
             std::cout << row_;
+
+        const Matrix<Type> buf = {
+            {1,2,3}
+        };
+
+        Matrix<Type> ops6 = { {1,2,3} };
+        ops6 /= buf;
+        for (auto& row_ : ops6[0])
+            std::cout << row_;
+
     }
 }
