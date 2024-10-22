@@ -67,4 +67,51 @@ inline void Matrix<Type>::validateMatrix_(const MatrixType<Type_>& argCheckMatri
     return;
 }
 
+template<typename Type>
+inline const size_t Matrix<Type>::rows()
+{
+    return this->rows_(this->matrix_);
+}
+
+template<typename Type>
+inline const size_t Matrix<Type>::cols()
+{
+    return this->cols_(this->matrix_);
+}
+
+template<typename Type>
+inline std::vector<std::reference_wrapper<Type>> Matrix<Type>::rowRef(const size_t& argPos)
+{
+    std::vector<std::reference_wrapper<Type>> resultRef(this->cols());
+
+    for (auto& elem : this->matrix_[argPos])
+        resultRef.push_back(elem);
+
+    return resultRef;
+}
+
+template<typename Type>
+inline std::vector<std::reference_wrapper<Type>> Matrix<Type>::colRef(const size_t& argPos)
+{
+    std::vector<std::reference_wrapper<Type>> resultRef(this->rows());
+
+    for (auto& elem : this->matrix_)
+        resultRef.push_back(elem);
+
+}
+
+template<typename Type>
+template<typename execPolicy>
+inline Matrix<Type>& Matrix<Type>::forEach(std::function<Type()> argFunc, execPolicy)
+{
+    std::for_each(execPolicy(), this->matrix_.begin(), this->matrix_.end(), [&](Matrix<Type>::RowType<Type>& row) {
+        std::for_each(execPolicy(), row.begin(), row.end(), [&](Type& elem) {
+            elem = argFunc();
+            });
+        });
+    return *this;
+}
+
+
+
 #endif

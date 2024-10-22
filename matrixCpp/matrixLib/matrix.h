@@ -70,7 +70,8 @@ public:
 private:
     template<typename Type_, typename execPolicy_ = DefPolType> void add_(MatrixType<Type_>&, const MatrixType<Type_>&); // 加算
     template<typename Type_, typename execPolicy_ = DefPolType> void sub_(MatrixType<Type_>&, const MatrixType<Type_>&); // 減算
-    template<typename Type_, typename execPolicy_ = DefPolType> void mul_(MatrixType<Type_>&, const MatrixType<Type_>&); // 乗算
+    template<typename Type_, typename execPolicy_ = DefPolType> MatrixType<Type_> mul_(const MatrixType<Type_>&, const MatrixType<Type_>&); // 乗算
+
     template<typename Type_, typename execPolicy_ = DefPolType> void hadamardMul_(MatrixType<Type_>&, const MatrixType<Type_>&); // アダマール積
     template<typename Type_, typename execPolicy_ = DefPolType> void hadamardDiv_(MatrixType<Type_>&, const MatrixType<Type_>&); // アダマール除算
 
@@ -121,12 +122,35 @@ public:
 
     Type det(); // 行列式
 
-    std::reference_wrapper<Type> rowRef(const size_t&); // 行参照
-    std::reference_wrapper<Type> colRef(const size_t&); // 列参照
+    std::vector<std::reference_wrapper<Type>> rowRef(const size_t&); // 行参照
+    std::vector<std::reference_wrapper<Type>> colRef(const size_t&); // 列参照
 
-    Matrix<Type>& forEach(std::function<Type()>);                    // 各要素への操作
-    Matrix<Type>& forEach(std::function<Type(size_t,size_t,Type&)>); // 各要素への操作(行,列,そのポイントの値)
+    template<typename execPolicy = DefPolType>
+    Matrix<Type>& forEach(std::function<Type()>,execPolicy=execPolicy()); // 各要素への操作
+
+    template<typename execPolicy = DefPolType>
+    Matrix<Type>& forEach(std::function<Type(size_t,size_t,Type&)>,execPolicy=execPolicy()); // 各要素への操作(行,列,そのポイントの値)
 };
+
+
+#include <iomanip>
+// std::coutで出力
+template<typename CharT, typename Traits, typename MatrixType = double>
+std::basic_ostream<CharT, Traits>& operator <<
+(
+    std::basic_ostream<CharT, Traits>& ArgOstream,
+    Matrix<MatrixType> Matrix
+)
+{
+    for (size_t Row = 0; Row < Matrix.rows(); Row++) {
+        for (MatrixType Column : Matrix[Row])
+            ArgOstream << std::setw(10) << Column;
+
+        ArgOstream << std::endl;
+    }
+
+    return ArgOstream;
+}
 
 
 #endif
