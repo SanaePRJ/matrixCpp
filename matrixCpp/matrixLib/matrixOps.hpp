@@ -76,5 +76,119 @@ inline Matrix<Type>::RowType<Type>& Matrix<Type>::operator[](size_t argPos)
     return matrix_.at(argPos);
 }
 
+template<typename Type>
+inline Matrix<Type>& Matrix<Type>::operator+=(const Matrix<Type>& argOther)
+{
+    this->add(argOther);
+
+    return *this;
+}
+
+template<typename Type>
+inline Matrix<Type>& Matrix<Type>::operator-=(const Matrix<Type>& argOther)
+{
+    this->sub(argOther);
+
+    return *this;
+}
+
+template<typename Type>
+inline Matrix<Type>& Matrix<Type>::operator*=(const Matrix<Type>& argOther)
+{
+    this->mul(argOther);
+
+    return *this;
+}
+
+template<typename Type>
+inline Matrix<Type>& Matrix<Type>::operator^=(const Matrix<Type>& argOther)
+{
+    this->hadamardMul(argOther);
+
+    return *this;
+}
+
+template<typename Type>
+inline Matrix<Type>& Matrix<Type>::operator/=(const Matrix<Type>& argOther)
+{
+    this->hadamardDiv(argOther);
+
+    return *this;
+}
+
+template<typename Type>
+inline Matrix<Type>& Matrix<Type>::operator*=(const Type& argValue)
+{
+    this->scalarMul(argValue);
+
+    return *this;
+}
+
+template<typename Type>
+inline Matrix<Type> Matrix<Type>::operator +(const Matrix<Type>& argOther)
+{
+    Matrix<Type> Copy;
+
+    this->copyMatrix_(Copy,this->matrix_);
+    this->add_(Copy,argOther);
+
+    return Copy;
+}
+
+template<typename Type>
+inline Matrix<Type> Matrix<Type>::operator -(const Matrix<Type>& argOther)
+{
+    Matrix<Type> Copy;
+
+    this->copyMatrix_(Copy, this->matrix_);
+    this->sub_(Copy, argOther);
+
+    return Copy;
+}
+
+template<typename Type>
+inline Matrix<Type> Matrix<Type>::operator *(const Matrix<Type>& argOther)
+{
+    Matrix<Type> Copy;
+
+    this->copyMatrix_(Copy, this->matrix_);
+    this->mul_(Copy, argOther);
+
+    return Copy;
+}
+
+template<typename Type>
+inline Matrix<Type> Matrix<Type>::operator ^(const Matrix<Type>& argOther)
+{
+    Matrix<Type> Copy;
+
+    this->copyMatrix_(Copy, this->matrix_);
+    this->hadamardMul_(Copy, argOther);
+
+    return Copy;
+}
+
+template<typename Type>
+inline Matrix<Type> Matrix<Type>::operator /(const Matrix<Type>& argOther)
+{
+    Matrix<Type> Copy;
+
+    this->copyMatrix_(Copy, this->matrix_);
+    this->hadamardDiv_(Copy, argOther);
+
+    return Copy;
+}
+
+template<typename Type>
+inline Matrix<Type> Matrix<Type>::operator *(const Type& argValue)
+{
+    Matrix<Type> Copy;
+
+    this->copyMatrix_(Copy, this->matrix_);
+    this->scalarCalc_<Type,std::multiplies<Type>>(Copy, argValue);
+
+    return Copy;
+}
+
 
 #endif

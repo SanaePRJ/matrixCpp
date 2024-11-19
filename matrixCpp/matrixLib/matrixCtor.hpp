@@ -31,7 +31,7 @@ inline Matrix<Type>::Matrix
     const Matrix<Type>& copyMatrix
 )
 {
-    copyMatrix_(matrix_, copyMatrix.matrix_); // 行列のコピー
+    this->copyMatrix_(matrix_, copyMatrix.matrix_); // 行列のコピー
 }
 
 template<typename Type>
